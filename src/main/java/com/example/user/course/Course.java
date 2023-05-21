@@ -24,6 +24,22 @@ public class Course {
 	@NotEmpty
 	private int price;
 	
+	public Course() {}
+	
+	
+	
+	
+	public Course(long id, String cname, String cprovider,int price) {
+		super();
+		this.id = id;
+		this.cname = cname;
+		this.cprovider = cprovider;
+		this.price = price;
+	}
+
+
+
+
 	public long getId() {
 		return id;
 	}

@@ -43,7 +43,16 @@ public class User {
 	private String email;
 
 	
-	
+	public User(String firstname, String lastname, String password, String email) {
+		this.firstname=firstname;
+		this.lastname=lastname;
+		this.password=password;
+		this.email=email;
+	}
+
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getPassword() {
 		return password;

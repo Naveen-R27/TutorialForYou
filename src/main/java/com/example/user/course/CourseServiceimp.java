@@ -5,10 +5,13 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.stream.*;
 
 
 @Service
 public class CourseServiceimp implements CourseService {
+	
+	private List<Course> courses;
 
 	@Autowired
 	private CourseRepository courserepo;
@@ -43,5 +46,7 @@ public class CourseServiceimp implements CourseService {
 		this.courserepo.deleteById(id);
 		
 	}
+	
+	
 
 }
